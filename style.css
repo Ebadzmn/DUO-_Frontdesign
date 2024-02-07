@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@font-face {
+    font-family: 'font-1';
+    src: url(./assets/PPMori-SemiBold.woff2);
+}
+
+
+@font-face {
+    font-family: 'font-2';
+    src: url(./assets/SuisseIntl-Regular-WebXL.woff2);
+}
+
+@font-face {
+    font-family: 'font-3';
+    src: url(./assets/PPMori-Regular.woff2);
+}
+
+.main {
+    background-color: black;
+    /* cursor:none; */
+}
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    font-family: 'font-1';
+
+}
+
+
+.elem:hover img {
+    opacity: 1;
+    transition: all ease-out 0.5s;
+    rotate: 3deg;
+}
+
+.elem img {
+    width: 30%;
+}
+
+.carsor{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    position: fixed;
+    z-index: 99;
+    background-color: rgb(152, 230, 27);
+    mix-blend-mode: difference;
+    transition: background-image ease-in-out 0.5s;
+}
+
